@@ -1,3 +1,21 @@
 <resources>
     <string name="app_name">Horario</string>
+    <string-array name="grup">
+        <item>A1</item>
+        <item>A2</item>
+    </string-array>
+    <string name="Rojo">Rojo</string>
+    <string name="Azul">Azul</string>
+    <string name="Verde">Verde</string>
+    <string name="Color">Pon el color de la letra</string>
+    <string name="Nombre">Posa el teu nom</string>
+    <string name="profesor">Professor:</string>
+    <string name="clase">Classe:</string>
+    <string name="hora_fi">Hora Fi:</string>
+    <string name="hora_inici">Hora Inici:</string>
+    <string name="asignatura">Assignatura:</string>
+    <string name="grup">Grup:</string>
+    <string name="dia">Dia:</string>
+    <string name="saludos">Saludos --></string>
+
 </resources>
