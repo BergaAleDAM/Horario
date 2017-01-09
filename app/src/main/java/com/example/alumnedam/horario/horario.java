@@ -61,10 +61,10 @@ public class horario extends AppCompatActivity {
         horaDelSistema = formato.format(calendar.getTime());
 
         String[] dades = new String[]{horaDelSistema, grupo, diaSetmana};
-        Cursor c = db.rawQuery("SELECT * FROM HORARI WHERE ? BETWEEN hora_inici AND hora_fi AND grup = ? AND dia_setmana = ?", dades);
+        Cursor c = db.rawQuery("SELECT * FROM HORARI WHERE ? BETWEEN hora_inici AND hora_fi AND id_subgrup = ? AND dia_setmana = ?", dades);
         if (c.moveToFirst()) {
            do {
-               grup = c.getString(1);
+               //grup = c.getString(1);
                codiAssignatura = asignatura(c.getString(2));
                horaInici = c.getString(3);
                horaFi = c.getString(4);

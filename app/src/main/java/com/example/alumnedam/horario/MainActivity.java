@@ -44,8 +44,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         preferencesGuardar(tvNom, color,spinner);
         intent.putExtra("nom", tvNom.toString());
         intent.putExtra("grup", spinner.getSelectedItem().toString());
-        intent.putExtra("color", color.toString());
-        startActivity(intent);
+        intent.putExtra("color", color);
+        startActivity(this.intent);
 
     }
 
@@ -63,7 +63,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         SharedPreferences sp = getSharedPreferences("Config", Context.MODE_PRIVATE);
         SharedPreferences.Editor editor = sp.edit();
         editor.putString("nom", tvNom.getText().toString());
-        editor.putString("color", color.toString());
+        editor.putString("color", color);
         editor.putString("spinner", spinner.getSelectedItem().toString());
         editor.commit();
 
